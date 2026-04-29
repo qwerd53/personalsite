@@ -1,0 +1,32 @@
+.toggle {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  border: 1px solid var(--line);
+  border-radius: 4px;
+  background: transparent;
+  font-size: 0.85rem;
+  font-family: var(--font-body), sans-serif;
+  cursor: pointer;
+  transition: border-color 180ms ease;
+  color: var(--foreground);
+}
+
+.toggle:hover {
+  border-color: var(--accent);
+}
+
+.active {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+.inactive {
+  color: var(--muted);
+}
+
+.divider {
+  color: var(--line);
+  user-select: none;
+}

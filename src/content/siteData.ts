@@ -1,5 +1,9 @@
 import type { Bilingual } from "@/i18n/translations";
 
+export const siteConfig = {
+  basePath: "/personalsite",
+};
+
 export type StatItem = {
   label: Bilingual;
   value: Bilingual;
@@ -253,7 +257,7 @@ export const contactLinks: LinkItem[] = [
   },
   {
     label: { en: "CV", zh: "简历" },
-    href: "/assets/dongyang-wang-cv.pdf",
+    href: `${siteConfig.basePath}/assets/dongyang-wang-cv.pdf`,
   },
   { label: { en: "GitHub", zh: "GitHub" }, placeholder: true },
   { label: { en: "Google Scholar", zh: "谷歌学术" }, placeholder: true },

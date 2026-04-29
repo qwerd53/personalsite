@@ -9,6 +9,7 @@ import {
   profile,
   projectItems,
   researchItems,
+  siteConfig,
   timelineItems,
   ui,
 } from "@/content/siteData";
@@ -55,7 +56,7 @@ export default function Home() {
             </a>
             <a
               className={styles.ctaLinkSecondary}
-              href="/assets/dongyang-wang-cv.pdf"
+              href={`${siteConfig.basePath}/assets/dongyang-wang-cv.pdf`}
               target="_blank"
               rel="noreferrer"
             >
@@ -80,7 +81,7 @@ export default function Home() {
           <div className={styles.heroPanel}>
             <div className={styles.heroImageWrap}>
               <Image
-                src="/assets/hero-sky.jpg"
+                src={`${siteConfig.basePath}/assets/hero-sky.jpg`}
                 alt="Dongyang Wang standing outdoors against an open sky."
                 fill
                 priority
@@ -197,7 +198,7 @@ export default function Home() {
           <div className={styles.aboutVisual}>
             <div className={styles.editorialFrame}>
               <Image
-                src="/assets/profile-side.jpg"
+                src={`${siteConfig.basePath}/assets/profile-side.jpg`}
                 alt="Side profile portrait of Dongyang Wang."
                 fill
                 sizes="(max-width: 900px) 100vw, 36vw"
